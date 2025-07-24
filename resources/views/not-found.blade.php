@@ -34,13 +34,13 @@
         <hr />
 
         <div>
-            <h1 id="id-servizio">Servizio {{ $servizio }}</h1>
+            <h1 id="id-servizio">Il servizio non è disponibile</h1>
 
             <div class="row  mb-3 text-center">
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Il costo del servizio è di $ {{ $costo }} al mese</h4>
+                            <h4 class="my-0 fw-normal">Il servizio richiesto al momento non è disponibile</h4>
                         </div>
                         <div class="card-body">
                             <p id="abstract" class="text-start"><strong>Lorem Ipsum</strong> is simply dummy text of the printing and
@@ -61,7 +61,6 @@
                     </button>
                 </a>
             </div>
-
         </div>
 
         <div id="contact-me">

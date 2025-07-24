@@ -1,8 +1,13 @@
 body {
 }
 
-a {
+a,
+a:visited {
     text-decoration: none;
+    color: #2f5baa;
+}
+a:hover {
+    color: #99cafb;
 }
 
 #container {
@@ -10,7 +15,11 @@ a {
     margin: auto;
 }
 
-#hi-whoami {
+#hi-whoami,
+#id-servizio-lista,
+#id-servizio,
+#id-not-found
+ {
     font-family: "Garamonds";
     font-weight: normal;
     font-size: 4em;
@@ -74,6 +83,9 @@ button#send-email {
     margin-left: 10px;
 }
 hr {
-    
-    border-top: 1px solid #aaa;
+    border-top: 1px solid #555;
+}
+
+button:hover {
+    background-color: #2f5baa !important;
 }

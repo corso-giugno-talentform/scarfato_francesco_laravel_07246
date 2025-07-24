@@ -33,8 +33,8 @@
         </header>
         <hr />
 
-        <div id="whoami">
-            <h1 id="hi-whoami">Servizi offerti</h1>
+        <div>
+            <h1 id="id-servizio-lista">Servizi offerti</h1>
 
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 @foreach ($servizi as $key => $servizio)
