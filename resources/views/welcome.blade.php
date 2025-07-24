@@ -21,6 +21,7 @@
                 <a href="/">Home</a>
                 <a href="/chi-sono">Chi sono</a>
                 <a href="/curricula">Curricula</a>
+                    <a href="/servizi">Servizi</a>
                 <a href="/contatti">Contatti</a>
             </div>
             <a 
@@ -59,6 +60,7 @@
                     <a href="/">Home</a>
                     <a href="/chi-sono">Chi sono</a>
                     <a href="/curricula">Curricula</a>
+                    <a href="/servizi">Servizi</a>
                     <a href="/contatti">Contatti</a>
                 </div>
                 <a href="https://www.linkedin.com/in/francescoscarfato/">LinkedIn</a>
