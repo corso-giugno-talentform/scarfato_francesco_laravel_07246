@@ -22,11 +22,11 @@
         <header>
             <div class="flex-nav">
                 <div class="flex-gap-nav-item">
-                    <a href="/">Home</a>
-                    <a href="/chi-sono">Chi sono</a>
-                    <a href="/curricula">Curricula</a>
-                    <a href="/servizi">Servizi</a>
-                    <a href="/contatti">Contatti</a>
+                    <a href="{{ route('homepage') }}">Home</a>
+                    <a href="{{ route('about') }}">Chi sono</a>
+                    <a href="{{ route('curricula') }}">Curricula</a>
+                    <a href="{{ route('services') }}">Servizi</a>
+                    <a href="{{ route('contacts') }}">Contatti</a>
                 </div>
                 <a href="https://www.linkedin.com/in/francescoscarfato/" target="_blank">LinkedIn</a>
             </div>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="/servizi">
+                <a href="{{ route('services') }}">
                     <button 
                         type="button" 
                         class="w-100 btn btn-lg btn-outline-primary">Torna ai servizi
@@ -78,11 +78,11 @@
         <footer>
             <div class="flex-nav">
                 <div class="flex-gap-nav-item">
-                    <a href="/">Home</a>
-                    <a href="/chi-sono">Chi sono</a>
-                    <a href="/curricula">Curricula</a>
-                    <a href="/servizi">Servizi</a>
-                    <a href="/contatti">Contatti</a>
+                    <a href="{{ route('homepage') }}">Home</a>
+                    <a href="{{ route('about') }}">Chi sono</a>
+                    <a href="{{ route('curricula') }}">Curricula</a>
+                    <a href="{{ route('services') }}">Servizi</a>
+                    <a href="{{ route('contacts') }}">Contatti</a>
                 </div>
                 <a href="https://www.linkedin.com/in/francescoscarfato/">LinkedIn</a>
             </div>

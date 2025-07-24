@@ -1,59 +1,18 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PageController::class, 'homepage'])->name('homepage');
+Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/curricula', [PageController::class, 'curricula'])->name('curricula');
+Route::get('/contacts',  [PageController::class, 'contacts'])->name('contacts');;
+Route::get('/services', [PageController::class, 'services'])->name('services');
+Route::get('/service/{service}', [PageController::class, 'service'])->name('service');
 
-Route::get('/chi-sono', function () {
-    return view('chi-sono');
-});
-
-Route::get('/curricula', function () {
-    return view('curricula');
-});
-
-Route::get('/contatti', function () {
-    return view('contatti');
-});
-
-Route::get('/servizi', function () {
-    $services = [
-        'marketing',
-        'comunicazione',
-        'website'
-    ];
-
-    return view('servizi', ['servizi' => $services]);
-});
-
-Route::get('/servizio/{servizio}', function ($servizio) {
-    $services = [
-        'marketing' => 10,
-        'comunicazione' => 20,
-        'website' => 30
-    ];
-    
-    $costo = isset($services[$servizio])
-        ? $services[$servizio]
-        : 'servizio-not-found';
-
-    if (isset($services[$servizio])) {
-        $servizio = $services[$servizio];
-
-        return view('/servizio', [
-            'servizio' => $servizio,
-            'costo' => $costo
-        ]);
-    }
-
-    return view('/not-found', [
-        'servizio' => $servizio,
-        'costo' => $costo
-    ]);
-});
-
+/**
+ * Lascio per pro-memoria
+ */
 Route::get('/progetti/{project}', function ($project) {
     //project = ago
     //projects = paglia

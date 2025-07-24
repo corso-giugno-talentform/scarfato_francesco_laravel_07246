@@ -22,11 +22,11 @@
         <header>
             <div class="flex-nav">
                 <div class="flex-gap-nav-item">
-                    <a href="/">Home</a>
-                    <a href="/chi-sono">Chi sono</a>
-                    <a href="/curricula">Curricula</a>
-                    <a href="/servizi">Servizi</a>
-                    <a href="/contatti">Contatti</a>
+                    <a href="{{ route('homepage') }}">Home</a>
+                    <a href="{{ route('about') }}">Chi sono</a>
+                    <a href="{{ route('curricula') }}">Curricula</a>
+                    <a href="{{ route('services') }}">Servizi</a>
+                    <a href="{{ route('contacts') }}">Contatti</a>
                 </div>
                 <a href="https://www.linkedin.com/in/francescoscarfato/" target="_blank">LinkedIn</a>
             </div>
@@ -37,11 +37,11 @@
             <h1 id="id-servizio-lista">Servizi offerti</h1>
 
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                @foreach ($servizi as $key => $servizio)
+                @foreach ($services as $key => $service)
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">{{ $servizio }}</h4>
+                            <h4 class="my-0 fw-normal">{{ $service }}</h4>
                         </div>
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">$ {{$key * 10 + 10}}
@@ -53,7 +53,7 @@
                                 <li>Email support</li>
                                 <li>Help center access</li>
                             </ul>
-                            <a href="/servizio/{{ $servizio }}">
+                            <a href="/service/{{ $service }}">
                             <button 
                                 type="button" 
                                 class="w-100 btn btn-lg btn-outline-primary">Accedi al servizio
@@ -80,11 +80,11 @@
         <footer>
             <div class="flex-nav">
                 <div class="flex-gap-nav-item">
-                    <a href="/">Home</a>
-                    <a href="/chi-sono">Chi sono</a>
-                    <a href="/curricula">Curricula</a>
-                    <a href="/servizi">Servizi</a>
-                    <a href="/contatti">Contatti</a>
+                    <a href="{{ route('homepage') }}">Home</a>
+                    <a href="{{ route('about') }}">Chi sono</a>
+                    <a href="{{ route('curricula') }}">Curricula</a>
+                    <a href="{{ route('services') }}">Servizi</a>
+                    <a href="{{ route('contacts') }}">Contatti</a>
                 </div>
                 <a href="https://www.linkedin.com/in/francescoscarfato/">LinkedIn</a>
             </div>
