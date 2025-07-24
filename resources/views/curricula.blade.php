@@ -9,88 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    {{-- <link rel="stylesheet" href="resources/css/style.css"> --}}
-    <style>
-body {
-}
-
-a {
-    text-decoration: none;
-}
-
-#container {
-    width: 960px;
-    margin: auto;
-}
-
-#hi-whoami {
-    font-family: "Garamonds";
-    font-weight: normal;
-    font-size: 4em;
-}
-
-#whoami-image {
-    width: 32px;
-    height: 32px;
-}
-
-#cards {
-    display: flex;
-    justify-content:space-between;
-}
-
-.linux,
-.apache,
-.mysql,
-.php
-{
-    width: 480px;
-    height: 200px;
-    display: inline-flex;
-    border: 1px solid grey;
-    font-family: "Garamonds", serif, sans-serif;
-    font-weight: normal;
-    font-size: 2em;
-}
-
-button#send-email {
-    background-color: rgb(47, 91, 170);
-    color: #fff;
-    border-radius: 15px;
-    border: none;
-    padding: 8px 20px;
-    font-size: 13px;
-}
-
-.flex-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.flex-nav>a {
-    display: inline-flex;
-    width:fit-content;
-}
-
-.flex-gap-nav-item {
-    gap: 20px;
-    display: flex;
-}
-
-#contact-me {
-    display: inline-flex;
-    margin-top: 100px;
-}
-
-#contact-me>p {
-    margin-top: 7px;
-    margin-left: 10px;
-}
-hr {
-    
-    border-top: 1px solid #aaa;
-}
-</style>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
@@ -140,7 +59,7 @@ hr {
         </footer>
     </div>
 
-    <script src="resources/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
