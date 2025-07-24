@@ -44,3 +44,8 @@ $projects = [
     ];
 
 ```
+
+# ############################################################################
+# Refactoring
+# ############################################################################
+Creato il PageController e rinominato tutto in inglese, view, PageController methods, routes etc
